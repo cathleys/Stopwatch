@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <script src="script.js" defer></script>
+    <style>
+      .container {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-color: gainsboro;
+        padding: 15px;
+        border-radius: 5px;
+      }
+
+      .stopwatch {
+        font-size: 35px;
+      }
+
+      #start,
+      #pause,
+      #reset {
+        padding: 10px;
+        margin: 5px 0;
+        font-size: 15px;
+        color: white;
+        border-radius: 3px;
+      }
+
+      #start {
+        background-color: green;
+      }
+      #pause {
+        background-color: grey;
+      }
+      #reset {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="header">Countdown Timer</h1>
+      <div class="stopwatch">00:00:00</div>
+      <div class="buttons">
+        <button id="start">start</button>
+        <button id="pause">pause</button>
+        <button id="reset">reset</button>
+      </div>
+    </div>
+  </body>
+</html>
